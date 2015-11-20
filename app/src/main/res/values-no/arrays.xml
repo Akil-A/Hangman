@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="geeky">
+        <item>HOVEDKORT</item>
+        <item>LINUX</item>
+        <item>STASJONÆR</item>
+        <item>KONSOLL</item>
+        <item>PROSESSOR</item>
+        <item>SJAKK</item>
+        <item>BÆRBAR</item>
+    </string-array>
+
+    <string-array name="movies">
+        <item>LIMBO</item>
+        <item>NOKAS</item>
+        <item>CORNELIS</item>
+        <item>EKLIPSE</item>
+        <item>BØRNING</item>
+    </string-array>
+
+    <string-array name="music">
+        <item>MARIA</item>
+        <item>BONK</item>
+        <item>FROST</item>
+        <item>BIGBANG</item>
+        <item>TNT</item>
+        <item>SEIGMEN</item>
+        <item>URANGERT</item>
+    </string-array>
+</resources>

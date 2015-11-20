@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hangman_background">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/top">
+        <com.example.android.s181142.HangmanView
+            android:id="@+id/hangmanView_layout"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="188dp">
+        </com.example.android.s181142.HangmanView>
+        <RelativeLayout  android:layout_weight="0.5"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical"
+                         android:id="@+id/word_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/correct_word_textview"
+                android:textColor="#ffff00"
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="true"
+                android:freezesText="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wrong_letters_textview"
+                android:textColor="#ff0000"
+                android:textSize="16sp"
+                android:paddingTop="40dp"
+                android:layout_below="@+id/correct_word_textview"
+                android:layout_marginBottom="100dp"
+                android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/top">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:gravity="bottom|center"
+                      android:id="@+id/button_linearlayout"
+                      android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_a_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:text="@string/button_a"
+                          android:textColor="#ffffff"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_b_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_b"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_c_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_c"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_d_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:text="@string/button_d"
+                          android:textColor="#ffffff"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_e_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_e"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_f_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_f"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_g_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_g"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_h_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_h"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_i_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_i"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_j_id"
+                          android:minHeight="0dp"
+                          android:minWidth="0dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_j"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_k_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_k"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_l_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:text="@string/button_l"
+                          android:textColor="#ffffff"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_m_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_m"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_n_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_n"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+
+                                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_o_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:text="@string/button_o"
+                          android:textColor="#ffffff"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_p_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_p"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_q_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_q"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_r_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_r"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_s_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_s"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_t_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_t"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_u_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_u"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_v_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_v"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/butotn_w_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:text="@string/button_w"
+                          android:textColor="#ffffff"
+                          android:onClick="onClick"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_x_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_x"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_y_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:textColor="#ffffff"
+                          android:text="@string/button_y"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/button_z_id"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:text="@string/button_z"
+                          android:textColor="#ffffff"
+                          android:onClick="onClick"
+                          android:clickable="true"/>
+
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                android:id="@+id/last_">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/locale_button_1"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:text="@string/button_æ"
+                          android:textColor="#ffffff"
+                          android:onClick="onClick"
+                          android:clickable="true"
+                          android:visibility="invisible"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/locale_button_2"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:text="@string/button_ø"
+                          android:textColor="#ffffff"
+                          android:onClick="onClick"
+                          android:clickable="true"
+                          android:visibility="invisible"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/locale_button_3"
+                          android:minHeight="1dp"
+                          android:minWidth="1dp"
+                          android:text="@string/button_å"
+                          android:textColor="#ffffff"
+                          android:onClick="onClick"
+                          android:clickable="true"
+                          android:visibility="invisible"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

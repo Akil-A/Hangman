@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="geeky">
+        <item>SPEAKERS</item>
+        <item>IOS</item>
+        <item>ANDROID</item>
+        <item>PLAYSTATION</item>
+        <item>PROCESSOR</item>
+        <item>JAVA</item>
+        <item>MACBOOK</item>
+        <item>DEBUG</item>
+        <item>IPHONE</item>
+        <item>KEYBOARD</item>
+    </string-array>
+
+    <string-array name="movies">
+        <item>INCEPTION</item>
+        <item>SINISTER</item>
+        <item>TITANIC</item>
+        <item>GLADIATIOR</item>
+        <item>ARGO</item>
+        <item>BRAVEHEART</item>
+        <item>GOODFELLAS</item>
+        <item>SKYFALL</item>
+    </string-array>
+
+    <string-array name="music">
+        <item>EMINEM</item>
+        <item>ADELE</item>
+        <item>ELVIS</item>
+        <item>RIHANNA</item>
+        <item>PRINCE</item>
+        <item>MADONNA</item>
+        <item>BONO</item>
+    </string-array>
+</resources>
